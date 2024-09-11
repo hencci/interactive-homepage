@@ -80,6 +80,8 @@ body {
 
 .course-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 5rem;
     border: 1px solid rgba(65, 135, 249, 0.159);
     border-radius: 1rem;
@@ -92,6 +94,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    width: 50%;
 }
 
 .courses{
@@ -103,6 +106,24 @@ body {
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 1px;
+}
+
+.courses>span {
+    display: inline-flex;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid rgb(170, 215, 66);
+    border-radius: 0.5rem;
+}
+
+.courses>span>span:first-child {
+    background-color: rgb(170, 215, 66);
+    color: rgb(255, 255, 255);
+    padding: 0 0.75rem;
+}
+.courses>span>span:last-child {
+    color: rgb(170, 215, 66);
+    padding: 0 0.5rem;
 }
 
 .course-list-wrapper {
@@ -119,6 +140,16 @@ body {
     text-align: center;
 }
 
+.course-list-wrapper>ul>li:first-child {
+    color: rgb(106, 190, 205);
+}
+.course-list-wrapper>ul>li:nth-child(2) {
+    color: rgb(62, 84, 163);
+}
+.course-list-wrapper>ul>li:last-child {
+    color: rgb(207, 99, 144);
+}
+
 .course-list {
     display: inline-flex;
     align-items: center;
@@ -126,13 +157,64 @@ body {
     list-style: none;
 }
 
+.start-challenge {
+    display: inline-flex;
+    border: none;
+    border-radius: 10rem;
+    background-color: rgb(237, 44, 73);
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    font-style: italic;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 50%;
+}
+
 .web3-image {
     display: flex;
+    gap: 2rem;
     flex-direction: column;
+    justify-content: space-between;
     width: 50%;
 }
 
 .we3-image>img {
     max-width: 100%;
     height: auto;
+}
+
+.image-text {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#butt-1, #butt-2 {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.25rem 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#butt-1 {
+    background-color: rgb(62, 84, 163);
+    color: rgb(255, 255, 255);
+}
+
+#butt-2 {
+    background-color: rgb(219, 229, 230);
 }

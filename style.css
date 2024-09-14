@@ -364,8 +364,15 @@ hr {
     flex-shrink: 0;
     font-size: 1.6rem;
     font-style: italic;
+    font-weight: 700;
     justify-content: center;
     padding: 1.5rem 3rem;
     text-decoration: none;
     border-radius: 10rem;
+    transition: background-color 150ms, color 150ms;
+}
+
+.discord-button:hover {
+    background-color: #ffffff9b;
+    color: rgb(11, 37, 134);
 }

@@ -28,8 +28,8 @@ body {
     list-style: none;
 }
 
-.nav-links>ul>li>a {
-    text-decoration: none;
+.nav-links a {
+    text-decoration-line: none;
     color: inherit;
     display: flex;
     font-weight: 700;
@@ -39,6 +39,12 @@ body {
     position: relative;
     vertical-align: middle;
     cursor: pointer;
+}
+
+.nav-links a:hover {
+    text-decoration-line: underline ;
+    text-decoration-color: rgb(215, 9, 9);
+    text-decoration-thickness: 3px;
 }
 
 .github-login {
@@ -380,14 +386,16 @@ hr {
 footer {
     width: calc(100% - 6rem);
     margin: 0 auto;
+    max-width: 140rem;
 }
 
 .first-footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 8%;
+    gap: 6rem;
     width: 100%;
+    padding: 6rem 0rem;
 }
 
 .first-footer>div {
@@ -409,7 +417,7 @@ footer {
 
 .footer-content {
     display: flex;
-    gap: 3rem;
+    gap: 4%;
 }
 
 .subscribe {
@@ -417,7 +425,7 @@ footer {
     flex-direction: column;
     gap: 1.5rem;
     justify-content: flex-start;
-    width: 36%;
+    width: 38%;
 }
 
 .up-to-date {
@@ -466,7 +474,7 @@ footer {
 }
 
 .contact-infos {
-    width: 56%;
+    width: 58%;
     display: flex;
     gap: 1rem;
 }
@@ -496,5 +504,36 @@ footer {
     cursor: pointer;
     display: inline-flex;
     gap: 1rem;
-    
+    color: rgba(0, 0, 0, 0.447);
+    font-size: 1.2rem;
+}
+
+.contact-infos a:hover {
+    text-decoration: underline;
+}
+
+.second-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+    font-size: 1.5rem;
+}
+
+.s-footer-list {
+    display: inline-flex;
+    gap: 3rem;
+    vertical-align: middle;
+    list-style: none;
+}
+
+.second-footer p {
+    color: rgb(115, 115, 115);
+}
+
+.s-footer-list a {
+    text-decoration: none;
+    color: rgb(115, 115, 115);
+    display: inline-flex;
+    gap: 1rem;
 }

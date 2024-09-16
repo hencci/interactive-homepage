@@ -76,11 +76,11 @@ body {
 .challenge {
     display: flex;
     flex-direction: column;
-    gap: 8rem;
+    gap: 6rem;
     align-items: center;
     justify-content: space-between;
     width: calc(100% - 6rem);
-    max-width: 120rem;
+    max-width: 140rem;
     margin: 0 auto;
     padding: 6rem 0rem 0rem;
 }
@@ -100,6 +100,7 @@ body {
 .free-courses {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 3rem;
     width: 50%;
 }
@@ -108,11 +109,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     text-transform: uppercase;
     font-style: italic;
     font-weight: 700;
+    font-size: 10px;
     line-height: 1.5;
     letter-spacing: 1px;
+    width: 100%;
 }
 
 .courses>span {
@@ -163,8 +167,14 @@ body {
     gap: 1rem;
     list-style: none;
 }
+
+.news-homepage {
+    font-size: 1rem;
+}
+
 .news-description {
     line-height: 1.5;
+    font-size: 12px;
 }
 
 .start-challenge {
@@ -188,10 +198,10 @@ body {
 
 .web3-image {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-direction: column;
-    justify-content: space-between;
     width: 50%;
+    margin-bottom: -1rem;
 }
 
 .we3-image>img {
@@ -201,10 +211,11 @@ body {
 
 .image-text {
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
     flex-wrap: wrap;
     width: 100%;
-    vertical-align: bottom;
+    vertical-align: middle;
+    justify-content: flex-start;
 }
 
 #butt-1, #butt-2 {
@@ -218,6 +229,8 @@ body {
     line-height: 1.5;
     text-transform: uppercase;
     font-style: italic;
+    cursor: pointer;
+    font-size: 0.7rem;
 }
 
 #butt-1 {
@@ -243,6 +256,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-size: 12px;
+}
+
+.about-wrapper h3 {
+    font-size: 1rem;
 }
 
 .brief-wrapper {
@@ -312,10 +330,11 @@ code {
 
 .faqs-topic>div, .faqs-topic>p {
     padding: 1.5rem;
+    font-size: 12px;
 }
 
 .faqs-topic>div {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
@@ -329,7 +348,9 @@ hr {
 
 .discord-wrapper {
     padding: 10rem 0;
-    justify-content: center;
+    width: calc(100% - 6rem);
+    max-width: 140rem;
+    margin: 0 auto;
 }
 
 .discord-container {
@@ -338,7 +359,7 @@ hr {
     gap: 3rem;
     justify-content: center;
     align-items: center;
-    padding: 10rem 5rem;
+    padding: 5rem 2.5rem;
     width: 100%;
     background-color: rgb(32, 14, 168);
     color: #ffffff;
@@ -353,7 +374,7 @@ hr {
 }
 
 .discord-container>p {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     line-height: 1.3;
     font-weight: 400;
     text-align: center;
@@ -406,7 +427,7 @@ footer {
 .icon-wrapper {
     display: flex;
     gap: 3rem;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .icon-wrapper>a {
@@ -417,15 +438,17 @@ footer {
 
 .footer-content {
     display: flex;
-    gap: 4%;
+    gap: 6rem;
 }
 
 .subscribe {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    justify-content: flex-start;
-    width: 38%;
+    align-items: flex-start;
+    width: 100%;
+    text-align: start;
+    max-width: 30rem;
 }
 
 .up-to-date {
@@ -448,7 +471,7 @@ footer {
     border: 1px solid rgb(219, 229, 230);
     border-radius: 0.25rem;
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1rem;
     text-rendering: auto;
 }
 
@@ -457,10 +480,11 @@ footer {
     flex-shrink: 0;
     display: inline-flex;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 0.8rem;
     font-weight: 700;
     font-style: italic;
     text-transform: uppercase;
+    border: none;
     border-radius: 10rem;
     padding: 1rem 2rem;
     background-color: rgb(237, 44, 73);
@@ -474,7 +498,7 @@ footer {
 }
 
 .contact-infos {
-    width: 58%;
+    width: 100%;
     display: flex;
     gap: 1rem;
 }
@@ -482,6 +506,7 @@ footer {
 .contact-infos>div>h3 {
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 0.9rem;
 }
 
 .mentor, .explore, .community, .companies {
@@ -505,7 +530,7 @@ footer {
     display: inline-flex;
     gap: 1rem;
     color: rgba(0, 0, 0, 0.447);
-    font-size: 1.2rem;
+    font-size: 14px;
 }
 
 .contact-infos a:hover {
@@ -517,7 +542,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .s-footer-list {
@@ -536,4 +561,71 @@ footer {
     color: rgb(115, 115, 115);
     display: inline-flex;
     gap: 1rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        width: calc(100% - 3rem);
+    }
+
+    .nav-links>ul {
+        gap: 1rem 0rem;
+        display: none
+    }
+
+    .challenge {
+        gap: 4rem;
+        width: calc(100% - 3rem);
+        padding: 0;
+    }
+
+    .course-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2.5rem;
+    }
+
+    .web3-image {
+        width: 100%;
+    }
+
+    .free-courses {
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .free-courses p {
+        font-size: 12px;
+    }
+
+    .about-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .discord-container>h2 {
+        font-size: 1.4rem;
+        letter-spacing: 1.5px;
+    }
+    
+    .discord-container>p {
+        font-size: 1.2rem;
+        line-height: 1.1;
+    }
+
+    .contact-infos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
 }

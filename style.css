@@ -19,6 +19,28 @@ body {
     margin: 0 auto;
 }
 
+.logo-mobile {
+    display: none;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0.75;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: black;
+}
+
 .nav-links>ul {
     display: inline-flex;
     justify-content: center;
@@ -53,6 +75,11 @@ body {
     text-wrap: nowrap;
     padding: 1.25rem 2.5rem;
     border-radius: 10rem;
+    cursor: pointer;
+}
+
+.github-login a:hover {
+    text-decoration: none;
 }
 
 .heading-wrapper {
@@ -568,11 +595,56 @@ footer {
 @media (max-width: 768px) {
     .header-wrapper {
         width: calc(100% - 3rem);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .toggle-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .nav-links>ul {
-        gap: 1rem 0rem;
-        display: none
+    .logo-container {
+        padding: 1rem 0;
+    }
+
+    .logo-mobile {
+        display: inline-block;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .github-login {
+        display: inline-flex;
+        padding: 1rem 2rem;
+        border-radius: 10rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 
     .challenge {

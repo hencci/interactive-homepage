@@ -347,7 +347,7 @@ code {
     gap: 1rem;
 }
 
-.faqs-topic {
+details {
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(65, 135, 249, 0.159);
@@ -355,19 +355,24 @@ code {
     line-height: 1.5;
 }
 
-.faqs-topic>div, .faqs-topic>p {
+summary, details p{
     padding: 1.5rem;
     font-size: 12px;
 }
 
-.faqs-topic>div {
+details p{
+    transition: display 1000ms;
+}
+
+summary {
     font-size: 1rem;
     font-weight: 700;
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
 }
+
 
 hr {
     border: 1px solid rgba(65, 135, 249, 0.159)
